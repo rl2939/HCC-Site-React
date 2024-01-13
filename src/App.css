@@ -1,0 +1,131 @@
+body{
+  display:block !important;
+  
+}
+.App {
+  text-align: center;
+  padding:0 3vw 3vw;
+  /*background-color:whitesmoke;*/
+  background-color: orange;
+}
+.stick
+{
+ text-align:center;
+ position: sticky;
+ top:0px;
+ margin:0px;
+ background-color: #1b1c1d;
+ color:white;
+ padding: 1%;
+ font-size: 20px;
+ font-weight: bold;
+ z-index:9999;
+}
+.stick>h1{
+  margin:0;
+}
+/* fading animation in and out */
+.fading{
+  height: 80px;
+  width: 100%;
+  background: gray;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.fading-big{
+  height: 200px;
+  width: 100%;
+  background: gray;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+@keyframes fade {
+  50% {opacity: 1;}
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+/* for the about component */
+.About{
+  object-position: 0%;
+  width:100%;
+  background-color: white;
+  
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.About>h2{
+  margin:0;
+}
+.aboutQuote{
+  padding:0 2em;
+  border: 3px solid gray;
+  border-radius: 15px;
+}
+
+/* for the people component */
+
+.peopleList{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Everything one level deeper*/
+.peopleList>*{
+  flex: 1 1 200px;
+}
+
+.peopleListItem{
+  min-height: 250px;
+  margin: 1em;
+  padding-top: 1em;
+  border: 3px solid #ddd;
+  border-radius: 15px;
+}
+
+.peopleListItem>img{
+  max-width: 150px;
+}
+
+.peopleModalFlex{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+/* for the degrees component */
+
+/* for the minors component */
+.MuiAccordionSummary-content{
+  justify-content: center;
+}
+
+/* for the employment component */
+.employment {
+  background-color: aliceblue;
+  padding: 1%;
+}
+
+.white{
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.down{
+  margin-top: 20%;
+
+}
